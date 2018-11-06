@@ -12,8 +12,8 @@ add_library(foghornsupport STATIC
         )
 
 INSTALL(TARGETS foghornsupport
-        LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
-        ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR})
+        LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}/lib
+        ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR}/lib)
 
 INSTALL(FILES
         include/execinfo.h
@@ -21,4 +21,4 @@ INSTALL(FILES
         include/getpass.h
         include/glob.h
         include/sethostent.h
-        DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
+        DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/include)
