@@ -4,11 +4,11 @@ project(foghornsupport C)
 include_directories(include)
 
 add_library(foghornsupport STATIC
-        src/fassert.c
-        src/getpass.c
-        src/gfortran_symbols.c
+        #src/fassert.c
+        #src/getpass.c
+        #src/gfortran_symbols.c
         src/glob.c
-        src/sethostent.c
+        #src/sethostent.c
         )
 
 INSTALL(TARGETS foghornsupport
@@ -16,9 +16,9 @@ INSTALL(TARGETS foghornsupport
         ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR}/lib)
 
 INSTALL(FILES
-        include/execinfo.h
-        include/fassert.h
-        include/getpass.h
+        #include/execinfo.h
+        #include/fassert.h
+        #include/getpass.h
         include/glob.h
-        include/sethostent.h
+        #include/sethostent.h
         DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/include)
