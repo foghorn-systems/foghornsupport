@@ -1,2 +1,0 @@
-
-void sethostent(int stayopen);
