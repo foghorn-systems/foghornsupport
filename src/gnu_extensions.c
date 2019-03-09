@@ -10,7 +10,7 @@ void __assert_fail(const char * assertion, const char * file, unsigned int line,
   abort();
 }
 
-void concat_string (int destlen, char *dest,
+void _gfortran_concat_string (int destlen, char *dest,
 	       int len1, const char *s1,
 	       int len2, const char *s2)
 {
