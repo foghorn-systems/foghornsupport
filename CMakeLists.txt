@@ -5,6 +5,7 @@ include_directories(include)
 
 add_library(foghornsupport STATIC
         src/glob.c
+        src/gnu_extensions.c
         )
 
 INSTALL(TARGETS foghornsupport
