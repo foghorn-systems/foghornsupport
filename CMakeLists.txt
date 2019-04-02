@@ -8,6 +8,8 @@ add_library(foghornsupport STATIC
         src/gnu_extensions.c
         )
 
+link_libraries(m)
+
 INSTALL(TARGETS foghornsupport
         LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}/lib
         ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR}/lib)
