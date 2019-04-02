@@ -1,5 +1,7 @@
 #include <stdlib.h>
 #include <string.h>
+#include <stdint.h>
+#include <math.h>
 
 void __assert_fail(const char * assertion, const char * file, unsigned int line, const char * function) {
   if(!function) {
@@ -31,4 +33,8 @@ void _gfortran_concat_string (int destlen, char *dest,
 
   memcpy (dest, s2, len2 * sizeof (char));
   memset (&dest[len2], ' ', destlen - len2);
+}
+
+int32_t _gfortran_pow_i4_i4(int32_t val, int32_t pow) {
+  return (int32_t) pow(val, pow);
 }
