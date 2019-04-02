@@ -35,6 +35,6 @@ void _gfortran_concat_string (int destlen, char *dest,
   memset (&dest[len2], ' ', destlen - len2);
 }
 
-int32_t _gfortran_pow_i4_i4(int32_t val, int32_t pow) {
-  return (int32_t) pow(val, pow);
+int32_t _gfortran_pow_i4_i4(int32_t val, int32_t exppon) {
+  return (int32_t) pow(val, exppon);
 }
